@@ -12,6 +12,13 @@ $(document).on("click", ".btn", function(){
 
 $(document).on("click", ".gif", playGif);
 
+$(document).on("click", "#reset", reset);
+
+function reset(){
+  event.preventDefault();
+  $('#result-box').empty();
+}
+
 function playGif(){
     $(".gif").on("click", function() {
         let state = $(this).data('state');
