@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <title>GIPHY APP</title>
+    <!-- bootstrap 4 cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- jquery -->
+   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+<div class="container-fluid">
+<div class="row">
+    <div class="col-md-6 offset-3 jumbotron"><h2 style="text-align: center">Welcome to GIPHY App</h2></div>
+</div>
+<div class="row">
+        <div class="col-md-6 offset-3 bg-light">
+            <h4>Available Animals</h4>
+                <div id="buttonGroup">
+                    
+                </div>
+                <hr>
+        </div>
+    </div>
+
+<div class="row">
+    <div class="col-md-6 offset-3 bg-light">
+     <form>
+         <div class="form-group">
+             <label for="animalTxt">Add an animal</label>
+            <input type="text" class="form-control" id="animalTxt">
+            <br>
+            <input type="button" class="btn btn-primary" value="Submit" id="addBtn">
+            <button class="btn btn-danger" onclick="$('#result-box').empty();">Reset</button>
+         </div>
+     </form>
+
+    </div>
+</div>
+
+<div class="row">
+        <div class="col-md-6 offset-3 bg-light">
+            <h5>Results</h5>
+            <div id="result-box"></div>
+        </div>
+    </div>
+
+</div>
+</body>
+<!-- javascript file -->
+<script src="assets/app.js"></script>
+</html>
