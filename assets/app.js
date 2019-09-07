@@ -77,7 +77,7 @@ method })
     gif.attr('data-animate', response.data[i].images.original.url);
     gif.attr('title', "Double Click for Magic!");
     gif.attr('data-state', 'still');
-    
+    gif.attr('width', '100%');
     rating.text("Rating: " + response.data[i].rating);
     newGify.append(gif)
     newGify.append(rating);
